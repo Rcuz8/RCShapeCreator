@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class RCShapeFactory: UIView {
     
@@ -16,7 +17,15 @@ class RCShapeFactory: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         myShape = RCShape()
+        lineColor = UIColor.darkBluee
+        viewBackgroundColor = UIColor.lightBluee
     }
+    
+    var lineWidth = 1
+    
+    var lineColor: UIColor!
+    
+    var viewBackgroundColor: UIColor!
     
     
     
@@ -30,17 +39,16 @@ class RCShapeFactory: UIView {
     override func draw(_ rect: CGRect) {
         // Drawing code
         
-        print("drawing✅")
-        UIColor.orange.setFill()
+        UIColor.yellow.setFill()
         let context = UIGraphicsGetCurrentContext()
-        context?.setFillColor(UIColor.orange.cgColor)
+        context?.setFillColor(viewBackgroundColor.cgColor)
         context?.fill(rect)
         
-        print("XXXX")
-        UIColor.blue.setStroke()
+        lineColor.setStroke()
         
         let path = UIBezierPath()
         path.fill()
+        path.lineWidth = CGFloat(lineWidth)
         
         if myShape.pointsCount > 0{
             path.move(to: myShape.points[0])
@@ -55,16 +63,23 @@ class RCShapeFactory: UIView {
             }
             let firstPoint = myShape.points[0]
             path.addLine(to: firstPoint)
-            //   path.move(to: firstPoint)
+            
             
             path.stroke()
+            
+            
         }
-        
-        
-        
-        
     }
     
     
+}
+extension UIColor{
     
+    class var lightBluee: UIColor {
+        return UIColor(red: 173/255, green: 229/255, blue: 247/255, alpha: 1)
+    }
+    
+    class var darkBluee: UIColor {
+        return UIColor(red: 35/255, green: 121/255, blue: 150/255, alpha: 1)
+    }
 }

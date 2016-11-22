@@ -12,6 +12,7 @@
 		94CB3A5A1DE3A764007FD2B1 /* RCShapeCreator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CB3A501DE3A764007FD2B1 /* RCShapeCreator.framework */; };
 		94CB3A5F1DE3A764007FD2B1 /* RCShapeCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB3A5E1DE3A764007FD2B1 /* RCShapeCreatorTests.swift */; };
 		94CB3A611DE3A764007FD2B1 /* RCShapeCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 94CB3A531DE3A764007FD2B1 /* RCShapeCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94E317071DE4EC7D0037D3B0 /* RCFactoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E317061DE4EC7D0037D3B0 /* RCFactoryHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		94CB3A591DE3A764007FD2B1 /* RCShapeCreatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCShapeCreatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CB3A5E1DE3A764007FD2B1 /* RCShapeCreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCShapeCreatorTests.swift; sourceTree = "<group>"; };
 		94CB3A601DE3A764007FD2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E317061DE4EC7D0037D3B0 /* RCFactoryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCFactoryHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				94CB3A541DE3A764007FD2B1 /* Info.plist */,
 				9463D2041DE3B1C7007E5F93 /* RCShape.swift */,
 				9463D26B1DE3E07B007E5F93 /* RCShapeFactory.swift */,
+				94E317061DE4EC7D0037D3B0 /* RCFactoryHandler.swift */,
 			);
 			path = RCShapeCreator;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				9463D2051DE3B1C7007E5F93 /* RCShape.swift in Sources */,
 				9463D26C1DE3E07B007E5F93 /* RCShapeFactory.swift in Sources */,
+				94E317071DE4EC7D0037D3B0 /* RCFactoryHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
