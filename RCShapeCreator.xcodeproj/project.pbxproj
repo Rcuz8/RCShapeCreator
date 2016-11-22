@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9463D2051DE3B1C7007E5F93 /* RCShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463D2041DE3B1C7007E5F93 /* RCShape.swift */; };
+		9463D26C1DE3E07B007E5F93 /* RCShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463D26B1DE3E07B007E5F93 /* RCShapeFactory.swift */; };
 		94CB3A5A1DE3A764007FD2B1 /* RCShapeCreator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CB3A501DE3A764007FD2B1 /* RCShapeCreator.framework */; };
 		94CB3A5F1DE3A764007FD2B1 /* RCShapeCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB3A5E1DE3A764007FD2B1 /* RCShapeCreatorTests.swift */; };
 		94CB3A611DE3A764007FD2B1 /* RCShapeCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 94CB3A531DE3A764007FD2B1 /* RCShapeCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9463D2041DE3B1C7007E5F93 /* RCShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCShape.swift; sourceTree = "<group>"; };
+		9463D26B1DE3E07B007E5F93 /* RCShapeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCShapeFactory.swift; sourceTree = "<group>"; };
 		94CB3A501DE3A764007FD2B1 /* RCShapeCreator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RCShapeCreator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CB3A531DE3A764007FD2B1 /* RCShapeCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCShapeCreator.h; sourceTree = "<group>"; };
 		94CB3A541DE3A764007FD2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				94CB3A531DE3A764007FD2B1 /* RCShapeCreator.h */,
 				94CB3A541DE3A764007FD2B1 /* Info.plist */,
+				9463D2041DE3B1C7007E5F93 /* RCShape.swift */,
+				9463D26B1DE3E07B007E5F93 /* RCShapeFactory.swift */,
 			);
 			path = RCShapeCreator;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 					94CB3A4F1DE3A764007FD2B1 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7VAFMRYWYR;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					94CB3A581DE3A764007FD2B1 = {
@@ -198,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9463D2051DE3B1C7007E5F93 /* RCShape.swift in Sources */,
+				9463D26C1DE3E07B007E5F93 /* RCShapeFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +331,7 @@
 		94CB3A651DE3A764007FD2B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7VAFMRYWYR;
@@ -334,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rcocuzzo8.RCShapeCreator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +352,7 @@
 		94CB3A661DE3A764007FD2B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7VAFMRYWYR;
@@ -360,6 +372,7 @@
 		94CB3A681DE3A764007FD2B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7VAFMRYWYR;
 				INFOPLIST_FILE = RCShapeCreatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +385,7 @@
 		94CB3A691DE3A764007FD2B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7VAFMRYWYR;
 				INFOPLIST_FILE = RCShapeCreatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +414,7 @@
 				94CB3A661DE3A764007FD2B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94CB3A671DE3A764007FD2B1 /* Build configuration list for PBXNativeTarget "RCShapeCreatorTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +423,7 @@
 				94CB3A691DE3A764007FD2B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
